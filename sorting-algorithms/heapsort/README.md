@@ -13,5 +13,9 @@ The heapsort algorithm uses max-heaps.  min-heaps are typically used in priority
 ## Procedures
 
 - `max-heapify` is the key to maintain the max-heap property.
+
+![](https://cdn-images-1.medium.com/max/800/1*bmKBVEQpSaZBUaE_rMPy3Q.png)
+
+
 - `build-max-heap` produces a max-heap from an unordered input array.
 - `heapsort` sorts an array in place
