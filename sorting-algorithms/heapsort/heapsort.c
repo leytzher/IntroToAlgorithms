@@ -31,3 +31,9 @@ void max_heapify(int array[], int i, int heap_size) {
     max_heapify(array, largest, heap_size);
   }
 }
+
+void build_max_heap(int array[], int arr_size) {
+  for (int i = arr_size / 2 - 1; i >= 0; i--) {
+    max_heapify(array, i, arr_size);
+  }
+}

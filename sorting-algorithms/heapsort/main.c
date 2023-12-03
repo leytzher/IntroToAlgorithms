@@ -12,9 +12,7 @@ int main(void) {
 
   // Apply max-heapify to build a max-heap from the array
   // start from the last non-leaf node
-  for (int i = n / 2 - 1; i >= 0; i--) {
-    max_heapify(arr, i, n);
-  }
+  build_max_heap(arr, n);
   printf("Max heap: \n");
   printArray(arr, n);
 
