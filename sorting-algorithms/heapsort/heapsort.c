@@ -14,7 +14,7 @@ void max_heapify(int array[], int i, int heap_size) {
   //  int parent = i >> 1;      // equivalent to (i/2)
   int largest = i; // assume the current node is the largest
   //
-  if ((left <= heap_size) && (array[left] > array[i])) {
+  if ((left <= heap_size) && (array[left] > array[largest])) {
     largest = left;
   } else {
     largest = i;
@@ -33,7 +33,17 @@ void max_heapify(int array[], int i, int heap_size) {
 }
 
 void build_max_heap(int array[], int arr_size) {
-  for (int i = arr_size / 2 - 1; i >= 0; i--) {
+  for (int i = (arr_size / 2) - 1; i >= 0; i--) {
     max_heapify(array, i, arr_size);
+  }
+}
+
+void heapsort(int array[], int arr_size) {
+  build_max_heap(array, arr_size);
+  for (int i = arr_size - 1; i > 0; i--) {
+    int tmp = array[0];
+    array[0] = array[i];
+    array[i] = tmp;
+    max_heapify(array, 0, i - 1);
   }
 }

@@ -6,14 +6,10 @@ int main(void) {
   // int arr[] = {4, 10, 3, 5, 1};
   int n = sizeof(arr) / sizeof(int);
 
-  printf("+++++++ TESTING MAX_HEAPIFY ++++++++++++++++++++\n\n");
+  printf("+++++++ TESTING HEAPSORT ++++++++++++++++++++\n\n");
   printf("Original Array: \n");
   printArray(arr, n);
-
-  // Apply max-heapify to build a max-heap from the array
-  // start from the last non-leaf node
-  build_max_heap(arr, n);
-  printf("Max heap: \n");
+  heapsort(arr, n);
   printArray(arr, n);
 
   return 0;
