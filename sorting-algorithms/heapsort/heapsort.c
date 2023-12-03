@@ -1,11 +1,18 @@
-#include <math.h>
+#include <stdio.h>
+
+void printArray(int arr[], int n) {
+  for (int i = 0; i < n; ++i) {
+    printf("%d ", arr[i]);
+  }
+  printf("\n");
+}
 
 void max_heapify(int array[], int i, int heap_size) {
   // Get child nodes from node i
-  int left = i << 1;        // equivalent to 2*i
-  int right = (i << 1) + 1; // equivalent to 2*i+1
-  int parent = i >> 1;      // equivalent to (i/2)
-  int largest = i;          // assume the current node is the largest
+  int left = 2 * i + 1; // note that indices in CLRS are not zero-based
+  int right = 2 * i + 2;
+  //  int parent = i >> 1;      // equivalent to (i/2)
+  int largest = i; // assume the current node is the largest
   //
   if ((left <= heap_size) && (array[left] > array[i])) {
     largest = left;
