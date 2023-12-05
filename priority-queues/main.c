@@ -26,5 +26,18 @@ int main(void) {
   printf("Heap size %d\n", heap_size);
   printArray(arr3, heap_size);
 
+  int arr4[] = {10, 7, 5, 3, 1};
+  int heap_size4 = 5;
+
+  printf("Original max-heap: ");
+  printArray(arr4, heap_size4);
+
+  // Insert a new key (e.g., 9) into the max-heap
+  int key_to_insert = 9;
+  max_heap_insert(arr4, key_to_insert, &heap_size4);
+
+  printf("Max-heap after insertion: ");
+  printArray(arr4, heap_size4);
+
   return 0;
 }

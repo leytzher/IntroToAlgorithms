@@ -56,6 +56,6 @@ void heap_increase_key(int array[], int i, int key) {
 
 void max_heap_insert(int array[], int key, int *heap_size) {
   (*heap_size)++;
-  array[*heap_size - 1] = -INFINITY;
-  heap_increase_key(array, *heap_size, key);
+  array[*heap_size - 1] = -99999999;
+  heap_increase_key(array, *heap_size - 1, key);
 }
