@@ -34,6 +34,11 @@ int main(void) {
   printArray(arr3, heap_size);
 
   // convert to min queue:
+  printf("Build a max heap\n");
+  arr_len = sizeof(arr3) / sizeof(arr3[0]);
+  int my_heap[arr_len];
+  build_max_heap(arr3, my_heap, arr_len);
+  printArray(my_heap, arr_len);
 
   return 0;
 }

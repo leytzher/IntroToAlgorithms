@@ -59,3 +59,12 @@ void max_heap_insert(int array[], int key, int *heap_size) {
   array[*heap_size - 1] = -99999999;
   heap_increase_key(array, *heap_size - 1, key);
 }
+
+void build_max_heap(int src_array[], int dst_array[], int array_size) {
+  int *heap_size;
+  *heap_size = 0;
+
+  for (int i = 0; i < array_size; i++) {
+    max_heap_insert(dst_array, src_array[i], heap_size);
+  }
+}
