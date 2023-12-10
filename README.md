@@ -9,5 +9,5 @@ My objective is to learn C programming while also learning about useful algorith
 -  ![Merge sort](https://github.com/leytzher/IntroToAlgorithms/tree/main/sorting-algorithms/merge-sort)
 -  ![Heap sort](https://github.com/leytzher/IntroToAlgorithms/tree/main/sorting-algorithms/heapsort)
 -  ![Priority Queues (Max-priority)](https://github.com/leytzher/IntroToAlgorithms/tree/main/sorting-algorithms/priority-queues)
--  Quicksort [Work In Progress]
+-  ![Quicksort](https://github.com/leytzher/IntroToAlgorithms/tree/main/sorting-algorithms/quicksort)
 
